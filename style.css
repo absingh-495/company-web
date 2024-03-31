@@ -12,7 +12,7 @@ body{
 
 header{
   height: 100px;
-  /* background: grey; */
+  /* background: rgb(290, 255, 255); */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,5 +20,46 @@ header{
 
 ul{
   display: flex;
-  list-style:  none;
+  list-style:  none;  
+  margin-right: 100px;
 }
+
+ul li a{
+  padding: 0px 20px;
+  text-decoration: none;
+  color:#3a3a3a;
+  display: inline-block;
+  
+}
+ 
+li a:after{
+  content: '';
+  display: block;
+  height: 4px;
+  width: 0;
+  background:#c4c4f7;;
+  transition:all .5s;
+}
+
+li a:hover::after{
+  width: 100%;
+
+}
+
+main{
+  display: flex;
+  border: 1px solid red;
+  height:calc(100vh - 100px); /*subtracting 100px of header to 100vh main */
+  align-items: center; /*for vertical alignment */
+  justify-content: center; /*for horizontal alignment */
+}
+
+.hero-section{
+  max-width:670px;
+  height: auto;
+}
+
+.Content-left{
+  width: 30%;
+}
+
